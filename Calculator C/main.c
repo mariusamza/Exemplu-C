@@ -3,6 +3,9 @@
 
 int main()
 {
-    printf("Hello world!\n");
+    fot(int i=100; i<=100; i++) {
+        printf("%d ", i);
+    }
+
     return 0;
 }
