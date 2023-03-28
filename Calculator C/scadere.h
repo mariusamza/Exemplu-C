@@ -8,7 +8,7 @@
 float scadere(float a,float b){
 
 
-    return =a - b;
+    return a - b;
 
 }
 
