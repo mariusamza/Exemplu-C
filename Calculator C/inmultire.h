@@ -1,11 +1,9 @@
 #ifndef INMULTIRE_H_INCLUDED
 #define INMULTIRE_H_INCLUDED
 
-float inmultire(float a,float b,float operatie){
+float inmultire(float a,float b){
 
-    printf("Introduceti 2 numere: \n");
-    scanf("%f%f",&a,&b);
-    inmultire=a*b;
+ return a*b;
 
 }
 
