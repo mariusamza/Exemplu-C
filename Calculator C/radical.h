@@ -4,7 +4,7 @@
 
 #include <math.h>
 
-float radical(float a, float b){
+float radical(float a){
 
 return sqrt(a);
 
