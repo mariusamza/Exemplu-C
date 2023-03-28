@@ -13,6 +13,9 @@ int main()
     float num1, num2;
     int operatie;
 
+    printf("Introdu doua numere cu spatiu intre ele (ex. 2 3):");
+    scanf("%f %f", &num1, &num2);
+
     printf("Alege operatie: \n");
     printf("(1) Adunare \n");
     printf("(2) Scadere \n");
@@ -20,31 +23,25 @@ int main()
     printf("(4) Impartire \n");
     printf("(5) Radical \n\n");
 
+    printf("Alege operatia: ");
+    scanf("%d",&operatie);
+
     switch (operatie)
     {
     case 1:
-        printf("Introdu doua numere cu spatiu intre ele (ex. 2 3):");
-        scanf("%f %f", num1, num2);
-        printf("%f %f", adunare(num1, num2));
+        printf("Adunare: %f", adunare(num1, num2));
         break;
     case 2:
-        printf("Introdu doua numere cu spatiu intre ele (ex. 2 3):");
-        scanf("%f %f", num1, num2);
-        printf("%f %f", scadere(num1, num2));
+        printf("Scadere: %f", scadere(num1, num2));
         break;
     case 3:
-        printf("Introdu doua numere cu spatiu intre ele (ex. 2 3):");
-        scanf("%f %f", num1, num2);
-        printf("%f %f", inmultire(num1, num2));
+        printf("Inmultire: %f", inmultire(num1, num2));
         break;
     case 4:
-        scanf("%f %f", num1, num2);
-        printf("%f %f", impartire(num1, num2));
+        printf("Impartire: %f", impartire(num1, num2));
         break;
     case 5:
-        printf("Introdu un numar:");
-        scanf("%f", num1);
-        printf("%f %f", radical(num1, num2));
+        printf("Radical din %f= %f",num1, radical(num1));
         break;
     default:
         printf("Eroare operatie.");
