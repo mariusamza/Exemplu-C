@@ -1,11 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "stdio.h"
+#include "stdlib.h"
 
-#include <adunare.h>
-#include <scadere.h>
-#include <inmultire.h>
-#include <impartire.h>
-#include <radical.h>
+#include "adunare.h"
+#include "scadere.h"
+#include "inmultire.h"
+#include "impartire.h"
+#include "radical.h"
 
 int main()
 {
