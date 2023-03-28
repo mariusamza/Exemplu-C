@@ -1,8 +1,7 @@
-#include "stdio.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 #include "adunare.h"
-#include "scadere.h"
 #include "inmultire.h"
 #include "impartire.h"
 #include "radical.h"
@@ -10,7 +9,8 @@
 int main()
 {
 
-    int num1, num2, operatie;
+    float num1, num2;
+    int operatie;
 
     printf("Alege operatie: \n");
     printf("(1) Adunare \n");
@@ -19,24 +19,32 @@ int main()
     printf("(4) Impartire \n");
     printf("(5) Radical \n\n");
 
-    printf("Introdu doua numere cu spatiu intre ele (ex. 2 3):");
-    scanf("%d %d", num1, num2);
 
     switch(operatie) {
         case 1:
-            adunare(num1, num2);
+            printf("Introdu doua numere cu spatiu intre ele (ex. 2 3):");
+            scanf("%f %f", num1, num2);
+            printf("%f", adunare(num1, num2));
             break;
         case 2:
-            scadere(num1, num2);
+            printf("Introdu doua numere cu spatiu intre ele (ex. 2 3):");
+            scanf("%f %f", num1, num2);
+            printf("%f", scadere(num1, num2));
             break;
         case 3:
-            inmultire(num1, num2);
+            printf("Introdu doua numere cu spatiu intre ele (ex. 2 3):");
+            scanf("%f %f", num1, num2);
+            printf("%f", inmultire(num1, num2));
             break;
         case 4:
-            impartire(num1, num2);
+            printf("Introdu doua numere cu spatiu intre ele (ex. 2 3):");
+            scanf("%f %f", num1, num2);
+            printf("%f", impartire(num1, num2));
             break;
         case 5:
-            radical(num1, num2);
+            printf("Introdu numarul:");
+            scanf("%f", num1);
+            printf("%f", radical(num1));
             break;
         default:
            printf("Eroare operatie.");
